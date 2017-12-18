@@ -1,0 +1,149 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Helvetica Neue, Helvetica, sans-serif;
+    background: rgba(189, 195, 199,1.0);
+
+}
+.contenedor{
+    width: 80%;
+    margin: 0 auto;
+    background: white;
+}
+.head{
+    display: flex;
+    background: rgba(0, 0, 0,0.8);
+}
+.head img{
+    width: 80%;
+    height: 100%;
+}
+.img{
+   height: auto;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.menu{
+    background: rgba(0, 0, 0,0.8);
+    color: white;
+    margin: 0;
+}
+.menu li{
+    display: inline-block;
+    padding-right: 45px;
+    padding-bottom: 8px;
+}
+.contenedor-mobilenav{
+  background: rgba(0, 0, 0,0.8);
+  text-align: right;
+  display: none;
+}
+.iconmenu{
+  background: rgba(0, 0, 0,0.8);
+  padding: 8px;
+  margin-right: 5px;
+}
+
+.segundomenu{
+    margin-left: 30px;
+    margin-bottom: 40px;
+}
+.segundomenu li{
+    display: inline-block;
+    background: rgba(231, 76, 60,.1);
+    padding: 8px;
+}
+li.fondoazul{
+    background: rgba(41, 128, 185,.2);
+}
+.secciontext{
+    display: flex;
+}
+.contenido{
+    margin: 15px;
+    flex-basis: 80%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.textoimagen{
+    display: flex;
+}
+.upcoming{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+.part{
+    display: flex;
+    padding: 20px 0;
+}
+.borde{
+    border-bottom: 2px dotted gray;
+    border-top: 2px dotted gray;
+}
+.upcoming a{
+    text-align: right;
+}
+.upcoming b{
+    color: blue;
+}
+.upcoming p{
+    font-size: 13px;
+    color: gray;
+}
+footer{
+    display: flex;
+}
+footer p{
+    flex: 1;
+    font-size: 13px;
+    margin-left: 10px;
+}
+.cuadro{
+    color: white;
+    display: inline-block;
+    padding: 10px;
+    width: 330px;
+    background: #3A539B;
+    position: fixed;
+    bottom: 30px;
+    right: 25px;
+}
+.cuadro input{
+    width: 200px;
+}
+@media screen and (max-width : 768px)
+{
+    .segundoimg{
+        display: none;
+    }
+    .segundomenu{
+        display: inline-grid;
+    }
+    .contenedor-mobilenav{
+        display: block;
+    }
+  /*.menu{
+        display: none;
+    }*/
+    .secciontext{
+        display: flex;
+        flex-direction: column;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .cuadro{
+        display: none;
+    }
+    .textoimagen{
+        display: flex;
+        flex-direction: column;
+    }
+}
